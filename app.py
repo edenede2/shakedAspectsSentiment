@@ -45,7 +45,7 @@ with st.sidebar:
     aspect_choice = st.selectbox("Aspect (zero-shot) model", list(ASPECT_MODELS.keys()))
     sentiment_choice = st.selectbox("Sentiment model", list(SENTIMENT_MODELS.keys()))
     if "XLM-RoBERTa" in aspect_choice:
-        st.warning("⚠️ This model is ~2× larger and may crash on Streamlit Community Cloud free tier.")
+        st.warning("⚠️ This model is ~2× larger if it crashed try move to less text or different model.")
 
 
 @st.cache_resource
